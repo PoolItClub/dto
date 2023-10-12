@@ -64,7 +64,7 @@ trait TurnsIntoArray
      * @return mixed
      * @throws UnknownDtoPropertyException
      */
-    public function &offsetGet($property)
+    public function &offsetGet($property): mixed
     {
         $value = $this->get($property);
 
